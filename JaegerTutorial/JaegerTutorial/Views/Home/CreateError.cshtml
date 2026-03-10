@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Database Error";
+}
+
+@model Employee
+
+<h1 class="bg-info text-white">Database Error</h1>
+<a asp-action="Read" class="btn btn-secondary">Read Employees</a>
+<h3>@ViewBag.Message</h3>
+<form method="post">
+    <button type="submit" class="btn btn-primary">Raise Error</button>
+</form>

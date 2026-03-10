@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ASP.NET CORE - Integrate OpenTelemetry with Jaeger for  Distributed Tracing</h1>
+    <p class="display-6">Read complete tutorial - <a href="https://www.yogihosting.com/aspnet-core-opentelemetry-Jaeger/" target="_blank">AT Here</a></p>
+</div>
+<div class="display-6">
+    <p>Make sure to do the following things before running the app:</p>
+    <ol class="bg-danger">
+        <li class="m-3">Database is running with EF Core migrations commands</li>
+        <li class="m-3">Jaeger is running</li>
+        <li class="m-3">RabbitMQ is running from Docker Container</li>
+        <li class="m-3">Reddis Cache is running from Docker Container</li>
+    </ol>
+    <p><u>Check the below links:</u></p>
+    <p>Read Employees : <a asp-action="Read" class="btn btn-secondary">Read</a></p>
+    <p>Create Employee : <a asp-action="Create" class="btn btn-secondary">Create</a></p>
+    <p>Database Error : <a asp-action="CreateError" class="btn btn-secondary">Error</a></p>
+    <p>Call API to Read Employees : <a asp-action="ReadApi" class="btn btn-secondary">Call API</a></p>
+    <p>Call Redis Cache to Read Employees : <a asp-action="ReadCache" class="btn btn-secondary">Call Cache</a></p>
+    <p>Mass Transit Message to RabbitMQ : <a asp-action="SendMessage" class="btn btn-secondary">Send Message</a></p>
+</div>

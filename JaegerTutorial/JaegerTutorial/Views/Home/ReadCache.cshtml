@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "All Employee";
+}
+
+@model IEnumerable<Employee>
+
+<h1 class="bg-info text-white">All Employees</h1>
+<a asp-action="Create" class="btn btn-secondary">Create</a>
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Telephone</th>
+        <th>Date of Birth</th>
+        <th>Designation</th>
+    </tr>
+    @foreach (Employee emp in Model)
+    {
+        <tr>
+            <td>@emp.Id</td>
+            <td>@emp.FirstName</td>
+            <td>@emp.LastName</td>
+            <td>@emp.Email</td>
+            <td>@emp.Gender</td>
+            <td>@emp.Telephone</td>
+            <td>@emp.DateOfBirth</td>
+            <td>@emp.Designation</td>
+        </tr>
+    }
+</table>
